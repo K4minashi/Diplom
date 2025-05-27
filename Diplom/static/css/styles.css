@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+}
+.head{
+	display: flex;
+	height: 100px;
+	justify-content: flex-end;
+	background-color: gainsboro;
+}
+.header{
+	display: inline-flex;
+	margin-right: 2%;
+	margin-top: 25px;
+	justify-content: space-between;
+}
+.header>ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+.header>ul>li>a{
+	margin: 15px;
+}
