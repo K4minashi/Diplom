@@ -42,6 +42,8 @@
 	flex-direction: column;
 	position: static;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
 	padding: 1%;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -49,7 +51,8 @@
 }
 .image>div{	
 	display: flex;
-	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .image>div>div{
 	display: inline-flex;
@@ -77,8 +80,8 @@ button{
 button:hover{
 	margin: 1%;
 	width: 210px;
-	transform: scale(110%);
-	background-color: #95bac5c4;
+	transform: scale(105%);
+	background-color: #f1f8fa;
 	border-width: 0;
 	border-radius: 5px;
 	transition: all 0.5s ease-out;;
@@ -132,9 +135,9 @@ a{
   color: rgb(132, 132, 199);
   text-decoration: underline;
 }
-@media screen and (width <1425px){
+ @media screen and (width <1346px){
 	.image>div{	
 	display: inline;
 	text-align: center;
 }
-}
+} 
