@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+}
+.head{
+	display: flex;
+	height: 100px;
+	justify-content: flex-end;
+	background-color: #FFFFFF;
+}
+.header{
+	display: inline-flex;
+	margin-right: 2%;
+	align-items: center;
+	justify-content: space-between;
+}
+.header>ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+.header>ul>li>a{
+	margin: 15px;
+}
+.container{
+	display: flex;
+	position: static;
+	flex-direction: column;
+	align-items: center;
+	background-color: #D9D9D9;
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.container>p{
+	margin: 1%;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+}
+.image{
+	display: flex;
+	flex-direction: column;
+	position: static;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: 3%;
+}
+.image>div{	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image>div>div{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1%;
+}
+.image>div>div>p{
+	display: inline;
+}
+.image>p{
+	display: inline;
+}
+button{
+	margin: 1%;
+	width: 204px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #F2F2F2;
+	border-width: 0;
+	border-radius: 5px;
+	transition: all 0.5s ease-out;;
+
+}
+button:hover{
+	margin: 1%;
+	width: 210px;
+	transform: scale(105%);
+	background-color: #f1f8fa;
+	border-width: 0;
+	border-radius: 5px;
+	transition: all 0.5s ease-out;;
+}
+.container_white{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.leftimg>img{
+	display: inline;
+	max-width: 538px;
+}
+.centerimg>img{
+	display: inline;
+	max-width:  427px;
+}
+.rightimg>img{
+	display: inline;
+	max-width:  315px;
+}
+.social{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3%;
+}
+.social>button{
+	width: 50px;
+	height: 50px;
+	background-color: inherit;
+	border-width: 0;
+
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+/* ссылка при наведении мыши */
+.header>ul>li>a:hover {
+	color: rgb(132, 132, 199);
+  	text-decoration: underline;
+}
+
+/* активная ссылка */
+.header>ul>li>a:active {
+  color: rgb(132, 132, 199);
+  text-decoration: underline;
+}
+ @media screen and (width <1346px){
+	.image>div{	
+	display: inline;
+	text-align: center;
+}
+} 
