@@ -1,27 +1,55 @@
-*{
+* {
 	margin: 0;
 }
-.head{
+
+p {
+	white-space: pre-wrap;
+	font-weight: lighter;
+}
+
+
+
+/* Голова */
+.head {
 	display: flex;
 	height: 100px;
 	justify-content: flex-end;
 	background-color: #FFFFFF;
 }
-.header{
+
+.header {
 	display: inline-flex;
 	margin-right: 2%;
 	align-items: center;
 	justify-content: space-between;
 }
-.header>ul{
+
+.header>ul {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	list-style: none;
 }
-.header>ul>li>a{
+
+.header>ul>li>a {
 	margin: 15px;
+	text-decoration: none;
+	font-size: 24px;
 }
-.container{
+
+.header>ul>li>a:hover {
+	color: rgb(132, 132, 199);
+	text-decoration: underline;
+	font-size: 200%;
+	transition: all 0.5s ease-out;
+	margin: 0;
+}
+
+
+
+/* блок контейнеров */
+.container {
 	display: flex;
 	position: static;
 	flex-direction: column;
@@ -31,13 +59,35 @@
 	padding-left: 4%;
 	padding-right: 4%;
 }
-.container>p{
+
+.container>p {
 	margin: 1%;
 	font-size: large;
-	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+.container_white {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	
+}
+
+.container_white>p{
+	white-space: normal;
 	text-align: center;
 }
-.image{
+
+
+
+/* блок с картинками */
+.image {
 	display: flex;
 	flex-direction: column;
 	position: static;
@@ -49,24 +99,54 @@
 	padding-right: 2%;
 	margin: 3%;
 }
-.image>div{	
+
+.image>div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.image>div>div{
+
+.image>div>div {
 	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 1%;
 }
-.image>div>div>p{
+
+.image>div>div>a>p {
 	display: inline;
+	font-size: 36px;
+	font-weight: lighter;
 }
-.image>p{
+
+.image>p {
 	display: inline;
+	font-size: 36px;
+	font-weight: lighter;
 }
-button{
+
+
+
+/* Картинки */
+.leftimg>a>img {
+	display: inline;
+	max-width: 538px;
+}
+
+.centerimg>a>img {
+	display: inline;
+	max-width: 427px;
+}
+
+.rightimg>a>img {
+	display: inline;
+	max-width: 315px;
+}
+
+
+
+/* кнопки */
+button {
 	margin: 1%;
 	width: 204px;
 	padding-top: 1%;
@@ -74,70 +154,78 @@ button{
 	background-color: #F2F2F2;
 	border-width: 0;
 	border-radius: 5px;
-	transition: all 0.5s ease-out;;
+	transition: all 0.5s ease-out;
+	;
 
 }
-button:hover{
+
+button:hover {
 	margin: 1%;
 	width: 210px;
 	transform: scale(105%);
 	background-color: #f1f8fa;
 	border-width: 0;
 	border-radius: 5px;
-	transition: all 0.5s ease-out;;
+	transition: all 0.5s ease-out;
 }
-.container_white{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #FFFFFF;
-	padding: 2%;
-	padding-left: 4%;
-	padding-right: 4%;
-}
-.leftimg>img{
-	display: inline;
-	max-width: 538px;
-}
-.centerimg>img{
-	display: inline;
-	max-width:  427px;
-}
-.rightimg>img{
-	display: inline;
-	max-width:  315px;
-}
-.social{
+
+
+
+/* соц сети */
+.social {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 3%;
 }
-.social>button{
+
+.social>button {
 	width: 50px;
 	height: 50px;
 	background-color: inherit;
 	border-width: 0;
 
 }
-a{
+
+a {
 	color: black;
 	text-decoration: none;
+	transition: all 0.5s ease-out;
 }
 
-/* ссылка при наведении мыши */
-.header>ul>li>a:hover {
-	color: rgb(132, 132, 199);
-  	text-decoration: underline;
+
+
+text {
+	line-height: 20px;
 }
 
-/* активная ссылка */
-.header>ul>li>a:active {
-  color: rgb(132, 132, 199);
-  text-decoration: underline;
+
+/* блок профиля */
+.profile {
+	display: flex;
+	justify-content: center;
 }
- @media screen and (width <1346px){
-	.image>div{	
+
+.profile>img {
+
+	max-width: 750px;
+	margin: 2%;
+}
+
+.profile>p{
 	display: inline;
-	text-align: center;
+	font-size: 32px;
+	white-space: normal;
 }
-} 
+
+@media screen and (width <1346px) {
+	.image>div {
+		display: inline;
+		text-align: center;
+	}
+
+	p {
+		white-space: normal;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
