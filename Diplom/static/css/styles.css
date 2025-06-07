@@ -1,3 +1,5 @@
+
+/* Общие */
 * {
 	margin: 0;
 }
@@ -7,9 +9,18 @@ p {
 	font-weight: lighter;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
+
+text {
+	line-height: 20px;
+}
 
 
-/* Голова */
+/* Шапка */
 .head {
 	display: flex;
 	height: 100px;
@@ -36,10 +47,10 @@ p {
 	margin: 15px;
 	text-decoration: none;
 	font-size: 24px;
+	transition: all 0.5s
 }
 
 .header>ul>li>a:hover {
-	color: rgb(132, 132, 199);
 	text-decoration: underline;
 	font-size: 200%;
 	transition: all 0.5s ease-out;
@@ -48,8 +59,9 @@ p {
 
 
 
+
 /* блок контейнеров */
-.container {
+.container1 {
 	display: flex;
 	position: static;
 	flex-direction: column;
@@ -60,10 +72,25 @@ p {
 	padding-right: 4%;
 }
 
-.container>p {
+.container1>p {
 	margin: 1%;
 	font-size: large;
 	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+.container1>ul{
+display: flex;
+flex-direction: column;
+padding-left: 5%;
+padding-right: 5%;
+margin-top: 1%;
+
+}
+
+.container1>ul>li{
+	font-size: large;
 	font-size: 24px;
 	font-weight: lighter;
 }
@@ -79,9 +106,16 @@ p {
 	
 }
 
+.container_white>button {
+	margin: 1%;
+}
+
 .container_white>p{
-	white-space: normal;
+	margin: 1%;
+	font-size: large;
 	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
 }
 
 
@@ -128,17 +162,41 @@ p {
 
 
 /* Картинки */
+.leftimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
 .leftimg>a>img {
 	display: inline;
 	max-width: 538px;
 }
+.leftimg>img {
+	display: inline;
+	max-width: 538px;
+}
 
+.centerimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
 .centerimg>a>img {
 	display: inline;
 	max-width: 427px;
 }
+.centerimg>img {
+	display: inline;
+	max-width: 427px;
+}
 
+.rightimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
 .rightimg>a>img {
+	display: inline;
+	max-width: 315px;
+}
+.rightimg>img {
 	display: inline;
 	max-width: 315px;
 }
@@ -159,7 +217,7 @@ button {
 
 }
 
-button:hover {
+/* button:hover {
 	margin: 1%;
 	width: 210px;
 	transform: scale(105%);
@@ -167,7 +225,7 @@ button:hover {
 	border-width: 0;
 	border-radius: 5px;
 	transition: all 0.5s ease-out;
-}
+} */
 
 
 
@@ -186,29 +244,19 @@ button:hover {
 
 }
 
-a {
-	color: black;
-	text-decoration: none;
-	transition: all 0.5s ease-out;
-}
-
-
-
-text {
-	line-height: 20px;
-}
 
 
 /* блок профиля */
 .profile {
 	display: flex;
+	padding: 2%;
 	justify-content: center;
 }
 
 .profile>img {
-
 	max-width: 750px;
-	margin: 2%;
+	max-height: 562px;
+	margin-right: 2%;
 }
 
 .profile>p{
@@ -217,6 +265,8 @@ text {
 	white-space: normal;
 }
 
+
+/* Разрешения экрана */
 @media screen and (width <1346px) {
 	.image>div {
 		display: inline;
@@ -228,4 +278,25 @@ text {
 		font-weight: lighter;
 		text-align: center;
 	}
+}
+@media screen and (width <1367px) {
+	.profile{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile>img{
+		max-width: 750px;
+	max-height: 562px;
+		margin: 0;
+	}
+	
+}
+
+/* bootstrap */
+.nav-link dropdown-toggle:hover{
+	text-decoration: underline;
+	font-size: 200%;
+	transition: all 0.5s ease-out;
+	margin: 0;
 }
