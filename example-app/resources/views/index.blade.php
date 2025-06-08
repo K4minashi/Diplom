@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @vite(['resources/css/app.css', 'resources/css/styles.css', 'resources/js/app.js'])
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+
+    <title>Главная </title>
+</head>
+
+
+<body>
+
+
+    <!-- Шапка -->
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
+                    class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> <span class="fs-4">Alexandra</span>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="/portfolio" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </header>
+    </div>
+
+
+    <!-- Цитата -->
+    <div class="container1">
+        <p>
+            “Искусство — это диалог между душой и миром.
+            Пусть каждая линия, каждый цвет и каждый мазок будут вашим искренним высказыванием.
+            Творите без страха, ведь в творчестве нет ошибок — только бесконечные возможности.”
+        </p>
+
+        <h2>Александра Корчагина</h2>
+    </div>
+
+
+    <!-- Картинки -->
+    <div class="image">
+        <p>Ознакомтесь с моими работами поподробнее</p>
+        <div>
+            <div class="leftimg">
+                <a href="#">
+                    <img src="static/images/5418174671121148389.jpg" alt="живопись">
+                    <p class="display-6">Картинка</p>
+                </a>
+            </div>
+            <div class="centerimg">
+                <a href="">
+                    <img src="static/images/5418174671121148390.jpg" alt="">
+                    <p class="display-6">Картинка</p>
+                </a>
+            </div>
+            <div class="rightimg">
+                <a href="">
+                    <img src="static/images/5262820511409369408.jpg" alt="">
+                    <p class="display-6">Картинка</p>
+                </a>
+            </div>
+            <div class="rightimg">
+                <a href="">
+                    <img src="static/images/5262820511409369408.jpg" alt="">
+                    <p class="display-6">Картинка</p>
+                </a>
+            </div>
+        </div>
+        <button class="btn btn-primary rounded-pill px-3" type="button">Портфолио</button>
+    </div>
+
+
+    <!-- Блок узнать получше -->
+    <div class="container1">
+        <h2>Узнайте меня получше</h2>
+        <p>
+            Прочитав мою биографию, вы сможете узнать мой путь как художника,
+            мои достижения и награды,
+            а также лучше понимать меня как человека.
+        </p>
+        <button class="btn btn-primary rounded-pill px-3" type="button">Обо мне</button>
+    </div>
+
+    <!-- Блок с соцсетями -->
+    <div class="container_white">
+        <h2>Я в соцсетях</h2>
+        <h3>
+            Вы можете связаться со мной в соцсетях
+            или оставить сообщение на сайте
+        </h3>
+        <button class="btn btn-primary rounded-pill px-3" type="button">Контакты</button>
+    </div>
+
+
+    <!-- Соцсети -->
+    <div class="social">
+        <button>
+            <a href=""><img src="static/images/VK(logo).png" alt="VK"></a>
+        </button>
+        <button>
+            <a href=""><img src="static/images/Tg(logo).png" alt="Telegram"></a>
+        </button>
+        <button>
+            <a href=""><img src="static/images/Pin(logo).png" alt="Pinterest"></a>
+        </button>
+    </div>
+
+
+    <!-- Подвал -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Главная</a></li>
+                <li class="nav-item"><a href="about-page.html" class="nav-link px-2 text-body-secondary">Обо мне</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-body-secondary">Портфолио</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

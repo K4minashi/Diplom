@@ -1,0 +1,317 @@
+@import 'tailwindcss';
+
+	
+
+/* Общие */
+* {
+	margin: 0;
+}
+
+p {
+	white-space: pre-wrap;
+	font-weight: lighter;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
+
+text {
+	line-height: 20px;
+}
+
+
+/* Шапка */
+.head {
+	display: flex;
+	height: 100px;
+	justify-content: flex-end;
+	background-color: #FFFFFF;
+}
+
+.header {
+	display: inline-flex;
+	margin-right: 2%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header>ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.header>ul>li>a {
+	margin: 15px;
+	text-decoration: none;
+	font-size: 24px;
+	transition: all 0.5s
+}
+
+.header>ul>li>a:hover {
+	text-decoration: underline;
+	font-size: 200%;
+	transition: all 0.5s ease-out;
+	margin: 0;
+}
+
+
+
+
+/* блок контейнеров */
+.container1 {
+	display: flex;
+	position: static;
+	flex-direction: column;
+	align-items: center;
+	background-color: #D9D9D9;
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.container1>p {
+	margin: 1%;
+	font-size: large;
+	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+.container1>ul{
+display: flex;
+flex-direction: column;
+padding-left: 5%;
+padding-right: 5%;
+margin-top: 1%;
+
+}
+
+.container1>ul>li{
+	font-size: large;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+.container_white {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	
+}
+
+.container_white>button {
+	margin: 1%;
+}
+
+.container_white>p{
+	margin: 1%;
+	font-size: large;
+	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+
+
+/* блок с картинками */
+.object{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.gallery-item{
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+.image {
+	display: flex;
+	flex-direction: column;
+	position: static;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: 3%;
+}
+
+.image>div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image>div>div {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1%;
+}
+
+.image>div>div>a>p {
+	display: inline;
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+.image>p {
+	display: inline;
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+
+
+/* Картинки */
+.leftimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
+.leftimg>a>img {
+	display: inline;
+	max-width: 538px;
+}
+.leftimg>img {
+	display: inline;
+	max-width: 538px;
+}
+
+.centerimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
+.centerimg>a>img {
+	display: inline;
+	max-width: 427px;
+}
+.centerimg>img {
+	display: inline;
+	max-width: 427px;
+}
+
+.rightimg>a{
+	display: inline-flex;
+	flex-direction: column;
+}
+.rightimg>a>img {
+	display: inline;
+	max-width: 315px;
+}
+.rightimg>img {
+	display: inline;
+	max-width: 315px;
+}
+
+
+
+/* кнопки */
+button {
+	margin: 1%;
+	width: 204px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #F2F2F2;
+	border-width: 0;
+	border-radius: 5px;
+	transition: all 0.5s ease-out;
+	;
+
+}
+
+/* button:hover {
+	margin: 1%;
+	width: 210px;
+	transform: scale(105%);
+	background-color: #f1f8fa;
+	border-width: 0;
+	border-radius: 5px;
+	transition: all 0.5s ease-out;
+} */
+
+
+
+/* соц сети */
+.social {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3%;
+}
+
+.social>button {
+	width: 50px;
+	height: 50px;
+	background-color: inherit;
+	border-width: 0;
+
+}
+
+
+
+/* блок профиля */
+.profile {
+	display: flex;
+	padding: 2%;
+	justify-content: center;
+}
+
+.profile>img {
+	max-width: 750px;
+	max-height: 562px;
+	margin-right: 2%;
+}
+
+.profile>p{
+	display: inline;
+	font-size: 32px;
+	white-space: normal;
+}
+
+
+/* Разрешения экрана */
+@media screen and (width <1346px) {
+	.image>div {
+		display: inline;
+		text-align: center;
+	}
+
+	p {
+		white-space: normal;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
+@media screen and (width <1367px) {
+	.profile{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile>img{
+		max-width: 750px;
+	max-height: 562px;
+		margin: 0;
+	}
+	
+}
+
+/* bootstrap */
+.nav-link dropdown-toggle:hover{
+	text-decoration: underline;
+	font-size: 200%;
+	transition: all 0.5s ease-out;
+	margin: 0;
+}
